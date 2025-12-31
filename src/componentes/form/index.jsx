@@ -1,3 +1,4 @@
+import { Botao } from "./botao";
 import { CampoText } from "./campoText";
 import { Dropdown } from "./dropdown";
 import "./form.css";
@@ -23,6 +24,7 @@ export function Form() {
           placeholder="Digite o endereço da sua imagem."
         />
         <Dropdown label="Time" itens={times} />
+        <Botao>Criar Card</Botao>
       </form>
     </section>
   );
