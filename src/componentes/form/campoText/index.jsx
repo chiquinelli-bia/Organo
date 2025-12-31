@@ -1,10 +1,10 @@
 import "./campoText.css";
 
-export function CampoText({ label, placeholder }) {
+export function CampoText({ label, placeholder, required }) {
   return (
     <div className="campo-texto">
       <label>{label}</label>
-      <input type="text" placeholder={placeholder} />
+      <input required={required} type="text" placeholder={placeholder} />
     </div>
   );
 }

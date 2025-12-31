@@ -13,17 +13,29 @@ export function Form() {
     "Mobile",
     " Inovação e Gestão",
   ];
+  const aoSalvar = (evento) => {
+    evento.preventDefault();
+    console.log("enviado");
+  };
   return (
     <section className="formulario">
-      <form>
+      <form onSubmit={aoSalvar}>
         <h2>Preencha os dados para criar o card do colaborador:</h2>
-        <CampoText label="Nome" placeholder="Digite seu nome." />
-        <CampoText label="Email" placeholder="Digite seu Email." />
+        <CampoText
+          required={true}
+          label="Nome"
+          placeholder="Digite seu nome."
+        />
+        <CampoText
+          required={true}
+          label="Email"
+          placeholder="Digite seu Email."
+        />
         <CampoText
           label="Imagem"
           placeholder="Digite o endereço da sua imagem."
         />
-        <Dropdown label="Time" itens={times} />
+        <Dropdown required={true} label="Time" itens={times} />
         <Botao>Criar Card</Botao>
       </form>
     </section>
