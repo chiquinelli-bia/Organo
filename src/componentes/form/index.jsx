@@ -4,7 +4,7 @@ import { CampoText } from "./campoText";
 import { Dropdown } from "./dropdown";
 import "./form.css";
 
-export function Form() {
+export function Form({ aoColaboradorCadastrado }) {
   const categoria = [
     "Programação",
     "Front-End",
@@ -17,10 +17,16 @@ export function Form() {
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
-  const [times, setTimes] = useState("");
+  const [time, setTime] = useState("");
   const aoSalvar = (evento) => {
     evento.preventDefault();
-    console.log("enviado =>", nome, cargo, imagem, times);
+    console.log("enviado =>", nome, cargo, imagem, time);
+    aoColaboradorCadastrado({
+      nome,
+      cargo,
+      imagem,
+      time,
+    });
   };
   return (
     <section className="formulario">
@@ -50,8 +56,8 @@ export function Form() {
           required={true}
           label="Time"
           itens={categoria}
-          valor={times}
-          aoAlterado={(valor) => setTimes(valor)}
+          valor={time}
+          aoAlterado={(valor) => setTime(valor)}
         />
         <Botao>Criar Card</Botao>
       </form>
