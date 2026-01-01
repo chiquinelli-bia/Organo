@@ -1,10 +1,16 @@
 import "./campoText.css";
 
-export function CampoText({ label, placeholder, required }) {
+export function CampoText({ label, placeholder, required, value, aoAlterado }) {
   return (
     <div className="campo-texto">
       <label>{label}</label>
-      <input required={required} type="text" placeholder={placeholder} />
+      <input
+        onChange={(evento) => aoAlterado(evento.target.value)}
+        required={required}
+        value={value}
+        type="text"
+        placeholder={placeholder}
+      />
     </div>
   );
 }
