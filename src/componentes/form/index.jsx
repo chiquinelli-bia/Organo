@@ -4,7 +4,7 @@ import { CampoText } from "./campoText";
 import { Dropdown } from "./dropdown";
 import "./form.css";
 
-export function Form({ aoColaboradorCadastrado }) {
+export function Form({ aoColaboradorCadastrado, categoria }) {
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
