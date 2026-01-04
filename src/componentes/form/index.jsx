@@ -18,6 +18,10 @@ export function Form({ aoColaboradorCadastrado, categoria }) {
       imagem,
       time,
     });
+    setNome("");
+    setCargo("");
+    setImagem("");
+    setTime("");
   };
   return (
     <section className="formulario">
