@@ -51,6 +51,7 @@ function App() {
     <div className="App">
       <Banner />
       <Form
+        categoria={times.map((time) => time.nome)}
         aoColaboradorCadastrado={(colaborador) =>
           aoNovoColaboradorAdicionado(colaborador)
         }
@@ -61,6 +62,7 @@ function App() {
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
           key={time.nome}
+          colaboradores={colaboradores}
         />
       ))}
     </div>

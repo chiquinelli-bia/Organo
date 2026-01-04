@@ -5,15 +5,6 @@ import { Dropdown } from "./dropdown";
 import "./form.css";
 
 export function Form({ aoColaboradorCadastrado }) {
-  const categoria = [
-    "Programação",
-    "Front-End",
-    "Data Science",
-    "Devops",
-    "UX e Design",
-    "Mobile",
-    " Inovação e Gestão",
-  ];
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
