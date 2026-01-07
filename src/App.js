@@ -2,6 +2,7 @@ import { useState } from "react";
 import Banner from "./componentes/banner/banner.jsx";
 import { Form } from "./componentes/form/index.jsx";
 import Time from "./componentes/time/index.jsx";
+import Footer from "./componentes/footer/index.jsx";
 
 function App() {
   const times = [
@@ -67,6 +68,7 @@ function App() {
           )}
         />
       ))}
+      <Footer></Footer>
     </div>
   );
 }

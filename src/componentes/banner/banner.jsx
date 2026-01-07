@@ -1,4 +1,4 @@
-import banner from "../../imagens/img";
+import { banner } from "../../imagens/img.js";
 import "./banner.css";
 
 export default function Banner() {
