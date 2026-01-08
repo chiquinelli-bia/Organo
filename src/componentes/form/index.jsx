@@ -11,7 +11,6 @@ export function Form({ aoColaboradorCadastrado, categoria }) {
   const [time, setTime] = useState("");
   const aoSalvar = (evento) => {
     evento.preventDefault();
-    console.log("enviado =>", nome, cargo, imagem, time);
     aoColaboradorCadastrado({
       nome,
       cargo,
