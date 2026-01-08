@@ -20,7 +20,7 @@ export function Form({ aoColaboradorCadastrado, categoria }) {
     setNome("");
     setCargo("");
     setImagem("");
-    setTime("Programação");
+    setTime("");
   };
   return (
     <section className="formulario">
