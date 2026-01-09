@@ -1,32 +1,32 @@
 # Organo
 
 ![Thumbnail do projeto. O título é “Organo - Projeto React do zero.” e o Subtítulo é “adaptado por Bianca Chiquinelli.”](./src/imagens/organo.png)
-sistema de cadastro e gerenciamento de colaboradores, des da criaçaõ da estrutura inicial, implementando a interface a partir de um layout do Figma, para entender conceitos centrais do React. O projeto foi desenvolvido a partir dos cursos "React: desenvolvendo com javascript"
-Este repositório apresenta **minhas contribuições específicas** e conhecimentos adquiridos no desenvolvimento da aplicação.
+sistema de cadastro e gerenciamento de colaboradores, desenvolvido em React a partir da estrutura inicial do projeto até a implementação completa da interface, baseada em um layout do Figma.
+O foco do projeto é aplicar e entender, na prática, conceitos centrais do React, como componentização, gerenciamento de estado e renderização dinâmica. Ele foi desenvolvido com base no curso “React: desenvolvendo com JavaScript”,
 
-Nele, o usuário pode cadastrar colaboradores por meio de um formulário, associá-los a uma categoria, e a aplicação reage dinamicamente ao estado, exibindo os dados na tela conforme as interações.
+Este repositório apresenta **minhas contribuições específicas** e aprendizados ao longo do desenvolvimento.
+
+Na aplicação, o usuário pode cadastrar colaboradores por meio de um formulário, associá-los a uma categoria (time) e visualizar os dados sendo atualizados dinamicamente conforme as interações.
 
 ## Minhas Contribuições
 
-- **Inicialização, estruturação e refatoração do projeto:** O projeto foi iniciado com Create React App (CRA), seguido da remoção de arquivos e imports desnecessários do boilerplate para manter o código limpo e organizado.
+- **Inicialização e organização do projeto:** O projeto foi iniciado com Create React App (CRA), seguido da remoção de arquivos e imports desnecessários do boilerplate para manter o código limpo e organizado.
   Como apoio ao desenvolvimento, foi utilizado o React.StrictMode, que atua apenas em ambiente de desenvolvimento, sem impactar a interface ou a versão de produção, ajudando a identificar alertas e erros comuns antecipadamente.
-- **Criação e implementação de componentes:** Foram desenvolvidos e integrados diversos componentes reutilizáveis, seguindo os princípios de separação de responsabilidades e composição do React, facilitando a reutilização, manutenção e evolução da interface.
+- **Componetização da interface:** Foram criados e integrados componentes reutilizáveis, seguindo os princípios de separação de responsabilidades e composição do React. Essa abordagem facilitou a manutenção do código e a evolução gradual da interface.
 - **Gerenciamento de estado com React Hooks:** A comunicação entre componentes ocorre via props, aplicando conceitos como:
-
-- Interpolação e concatenação de props.
-- Passagem de funções como propriedades para comunicação filho → pai.
-- Evitar prop drilling excessivo, mantendo uma hierarquia clara (a Context API foi apenas apresentada em aula, mas não utilizada no projeto).
+  - Interpolação e concatenação de props.
+  - Passagem de funções como propriedades para comunicação filho → pai.
+  - Evitar prop drilling excessivo, mantendo uma hierarquia clara (a Context API foi apenas apresentada em aula, mas não utilizada no projeto).
 - **fluxo de dados com React Hooks:** O controle de dados da aplicação foi feito utilizando o hook useState, especialmente para:
-
-- Gerenciar os valores dos inputs do formulário.
-- Controlar o fluxo de cadastro de colaboradores.
-- Centralizar o estado principal no componente App.
+  - Gerenciar os valores dos inputs do formulário.
+  - Controlar o fluxo de cadastro de colaboradores.
+  - Centralizar o estado principal no componente App.
 - **Renderização dinâmica e controle condicional:** A renderização da aplicação é feita de forma dinâmica utilizando o método map() para exibir os times e seus colaboradores, combinada com renderização condicional para evitar a exibição de times vazios. Nesse processo, a prop key foi aplicada corretamente nas listas, garantindo melhor desempenho e prevenindo avisos do React.
 
-  <!-- ![Demonstração do ByteBank: Tela de painel financeiro exibindo gráficos de variação de cotações de moedas e horário da variação, atualizando a cada 5 segundos. A direita uma lista de conversão da moeda para real. A barra lateral esquerda apresenta opções de navegação e um avatar. O tom é informativo.](https://imgur.com/gallery/projeto-bytebank-WmwOjRP#1AWAZmD) -->
-
-  ![](./src/imagens/Organo-pt1.png)
-  ![](./src/imagens/Organo-pt2.png)
+<p align="center">
+  <img src="./src/imagens/Organo-pt1.png" alt="Tela inicial do projeto Organo exibindo o banner principal e o formulário para cadastro de colaboradores, com campos para nome, cargo e imagem." width="500" />
+  <img src="./src/imagens/Organo-pt2.png" alt="Seção do projeto Organo mostrando os times organizados por área, com cards de colaboradores no time Front-End, exibindo foto, nome e cargo." width="500" />
+</p>
 
 ## Tecnologias Utilizadas
 
@@ -34,48 +34,50 @@ Nele, o usuário pode cadastrar colaboradores por meio de um formulário, associ
 - CSS 3
 - JavaScript (ES6+)
 - React
+  
   ⚙️ Técnicas:
-- Visualização de Dados: Integração da biblioteca Chart.js para renderização de gráficos dinâmicos, transmitindo clareza e confiabilidade nas cotações.
-- Requisições Assíncronas: Uso do Axios para consumir dados de API em tempo real, garantindo atualização rápida e sem travamentos.
-- Controle de Assincronicidade: Aplicação prática de async/await, setInterval() e Date() para lidar com chamadas simultâneas e manter a aplicação responsiva.
-- Paralelismo com Workers: Implementação de Web Workers para executar multithreads, permitindo consultas concorrentes a diferentes moedas sem comprometer a performance.
-- Organização de Código: Criação de funções auxiliares (horario(), atualizaGrafico(), cotacao()) para modularidade, reuso e manutenção facilitada.
-- Build e Escalabilidade: Configuração com Vite, aproveitando inicialização rápida, suporte nativo a módulos ES e estrutura otimizada para evolução do projeto.
+
+- Componentização com **componentes funcionais**
+- Gerenciamento de estado com **useState**
+- Comunicação entre componentes via **props**
+- Formulários controlados com **onChange** e **onSubmit**
+- Renderização dinâmica com **map()**
+- Renderização condicional no JSX
+- Uso adequado da prop **key** em listas
 
 ## Como Ter Acesso ao Projeto
 
 - **Versão online**: [Clique aqui](https://organo-omega-nine-12.vercel.app/)
 - **Rodar localmente**:
 
-1. Clone este repositório: ```bash
+1. Clone este repositório:
+  ```bash
    git clone https://github.com/chiquinelli-bia/Organo.git
 
    ```
 
-   ```
-
-2. Acesse a pasta do projeto:
+4. Acesse a pasta do projeto:
 
    ```bash
    cd Organo
 
    ```
 
-3. Instale as dependências:
+5. Instale as dependências:
 
    ```bash
    npm install
 
    ```
 
-4. Inicie o servidor de desenvolvimento:
+6. Inicie o servidor de desenvolvimento:
 
    ```bash
    npm run dev
 
    ```
 
-5. Abra no navegador o endereço exibido no terminal e Navegue pelas funcionalidades implementadas.
+7. Abra no navegador o endereço exibido no terminal e Navegue pelas funcionalidades implementadas.
 
 ## Créditos
 
