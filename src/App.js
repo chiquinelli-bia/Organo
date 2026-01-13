@@ -47,6 +47,9 @@ function App() {
   const aoNovoColaboradorAdicionado = (colaborador) => {
     setColaboradores([...colaboradores, colaborador]);
   };
+  const deletarColaborador = () => {
+    console.log("colaborador deletado")
+  }
   return (
     <div className="App">
       <Banner />
@@ -62,8 +65,11 @@ function App() {
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
           key={time.nome}
+          aoDeletar={deletarColaborador}
+
           colaboradores={colaboradores.filter(
             (colaborador) => colaborador.time === time.nome
+            
           )}
         />
       ))}
