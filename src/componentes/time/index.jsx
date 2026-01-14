@@ -8,19 +8,18 @@ const Time = (props) => {
         className="time"
         style={{ backgroundColor: props.corSecundaria }}
       >
+        <input
+          onChange={(evento) => props.mudarCor(evento.target.value, props.nome)}
+          value={props.corPrimaria}
+          type="color"
+          className="input-cor"
+        />
         <h3 style={{ borderColor: props.corPrimaria }}>{props.nome}</h3>
+
         <div className="colaboradores">
-          {props.colaboradores.map((colaborador) => 
-           {
-            console.log(<Colaborador
-                corDeFundo={props.corPrimaria}
-                key={colaborador.nome}
-                nome={colaborador.nome}
-                cargo={colaborador.cargo}
-                imagem={colaborador.imagem}
-                aoDeletar={props.aoDeletar}
-              />)
-              return      <Colaborador
+          {props.colaboradores.map((colaborador) => {
+            console.log(
+              <Colaborador
                 corDeFundo={props.corPrimaria}
                 key={colaborador.nome}
                 nome={colaborador.nome}
@@ -28,8 +27,18 @@ const Time = (props) => {
                 imagem={colaborador.imagem}
                 aoDeletar={props.aoDeletar}
               />
-           }
-          )}
+            );
+            return (
+              <Colaborador
+                corDeFundo={props.corPrimaria}
+                key={colaborador.nome}
+                nome={colaborador.nome}
+                cargo={colaborador.cargo}
+                imagem={colaborador.imagem}
+                aoDeletar={props.aoDeletar}
+              />
+            );
+          })}
         </div>
       </section>
     )
