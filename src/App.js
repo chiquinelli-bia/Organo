@@ -5,7 +5,7 @@ import Time from "./componentes/time/index.jsx";
 import Footer from "./componentes/footer/index.jsx";
 
 function App() {
-  const times = [
+  const [times, setTimes] = useState([
     {
       nome: "Programação",
       corPrimaria: "#57C278",
@@ -41,7 +41,7 @@ function App() {
       corPrimaria: "#FF8A29",
       corSecundaria: "#FFEEDF",
     },
-  ];
+  ]);
   const inicial = [
     {
       nome: "JULIANA AMOASEI",
@@ -220,7 +220,16 @@ function App() {
   const deletarColaborador = () => {
     console.log("colaborador deletado");
   };
-
+  function mudarCorDoTime(cor, nome) {
+    setTimes(
+      times.map((time) => {
+        if (time.nome === nome) {
+          time.corPrimaria = cor;
+        }
+        return time;
+      })
+    );
+  }
   return (
     <div className="App">
       <Banner />
@@ -232,6 +241,7 @@ function App() {
       />
       {times.map((time) => (
         <Time
+          mudarCor={mudarCorDoTime}
           nome={time.nome}
           corPrimaria={time.corPrimaria}
           corSecundaria={time.corSecundaria}
