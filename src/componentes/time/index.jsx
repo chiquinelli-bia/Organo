@@ -10,7 +10,7 @@ const Time = (props) => {
         style={{ backgroundColor: hexToRgba(props.cor, "0.4") }}
       >
         <input
-          onChange={(evento) => props.mudarCor(evento.target.value, props.nome)}
+          onChange={(evento) => props.mudarCor(evento.target.value, props.id)}
           value={props.cor}
           type="color"
           className="input-cor"
@@ -19,19 +19,10 @@ const Time = (props) => {
 
         <div className="colaboradores">
           {props.colaboradores.map((colaborador) => {
-            console.log(
-              <Colaborador
-                corDeFundo={props.cor}
-                key={colaborador.nome}
-                nome={colaborador.nome}
-                cargo={colaborador.cargo}
-                imagem={colaborador.imagem}
-                aoDeletar={props.aoDeletar}
-              />
-            );
             return (
               <Colaborador
                 corDeFundo={props.cor}
+                id={colaborador.id}
                 key={colaborador.nome}
                 nome={colaborador.nome}
                 cargo={colaborador.cargo}
