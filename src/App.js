@@ -8,30 +8,37 @@ import { v4 as uuidv4 } from "uuid";
 function App() {
   const [times, setTimes] = useState([
     {
+      id: uuidv4(),
       nome: "Programação",
       cor: "#57C278",
     },
     {
+      id: uuidv4(),
       nome: "Front-End",
       cor: "#82CFFA",
     },
     {
+      id: uuidv4(),
       nome: "Data Science",
       cor: "#A6D157",
     },
     {
+      id: uuidv4(),
       nome: "Devops",
       cor: "#E06B69",
     },
     {
+      id: uuidv4(),
       nome: "UX e Design",
       cor: "#D86EBF",
     },
     {
+      id: uuidv4(),
       nome: "Mobile",
       cor: "#FEBA05",
     },
     {
+      id: uuidv4(),
       nome: "Inovação e Gestão",
       cor: "#FF8A29",
     },
@@ -251,6 +258,9 @@ function App() {
       })
     );
   }
+  function cadastrarTime(novoTime) {
+    setTimes([...times, { ...novoTime, id: uuidv4() }]);
+  }
   return (
     <div className="App">
       <Banner />
@@ -259,9 +269,11 @@ function App() {
         aoColaboradorCadastrado={(colaborador) =>
           aoNovoColaboradorAdicionado(colaborador)
         }
+        cadastrarTime={cadastrarTime}
       />
       {times.map((time) => (
         <Time
+          id={time.id}
           mudarCor={mudarCorDoTime}
           nome={time.nome}
           cor={time.cor}

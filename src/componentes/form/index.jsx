@@ -4,11 +4,13 @@ import { CampoText } from "./campoText";
 import { Dropdown } from "./dropdown";
 import "./form.css";
 
-export function Form({ aoColaboradorCadastrado, categoria }) {
+export function Form({ aoColaboradorCadastrado, categoria, cadastrarTime }) {
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
   const [time, setTime] = useState("");
+  const [nomeTime, setNomeTime] = useState("");
+  const [corTime, setCorTime] = useState("");
   const aoSalvar = (evento) => {
     evento.preventDefault();
     aoColaboradorCadastrado({
@@ -17,6 +19,7 @@ export function Form({ aoColaboradorCadastrado, categoria }) {
       imagem,
       time,
     });
+
     setNome("");
     setCargo("");
     setImagem("");
@@ -24,7 +27,7 @@ export function Form({ aoColaboradorCadastrado, categoria }) {
   };
   return (
     <section className="formulario">
-      <form onSubmit={aoSalvar}>
+      <form className="container-form" onSubmit={aoSalvar}>
         <h2>Preencha os dados para criar o card do colaborador:</h2>
         <CampoText
           required={true}
@@ -54,6 +57,30 @@ export function Form({ aoColaboradorCadastrado, categoria }) {
           aoAlterado={(valor) => setTime(valor)}
         />
         <Botao>Criar Card</Botao>
+      </form>
+      <form
+        onSubmit={(evento) => {
+          evento.preventDefault();
+          cadastrarTime({ nome: nomeTime, cor: corTime });
+        }}
+        className="container-form"
+      >
+        <h2>Preencha os dados para criar um novo time.</h2>
+        <CampoText
+          obrigatorio
+          label="Nome"
+          placeholder="Digite o nome do time"
+          valor={nomeTime}
+          aoAlterado={(valor) => setNomeTime(valor)}
+        />
+        <CampoText
+          obrigatorio
+          label="Cor"
+          placeholder="Digite a cor do time"
+          valor={corTime}
+          aoAlterado={(valor) => setCorTime(valor)}
+        />
+        <Botao> Criar um novo time</Botao>
       </form>
     </section>
   );
