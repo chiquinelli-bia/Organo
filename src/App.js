@@ -242,12 +242,12 @@ function App() {
   const aoNovoColaboradorAdicionado = (colaborador) => {
     setColaboradores([...colaboradores, colaborador]);
   };
-  const deletarColaborador = (id) => {
+  function deletarColaborador(id) {
     console.log("id recebido:", id);
     setColaboradores(
       colaboradores.filter((colaborador) => colaborador.id !== id)
     );
-  };
+  }
   function mudarCorDoTime(cor, id) {
     setTimes(
       times.map((time) => {

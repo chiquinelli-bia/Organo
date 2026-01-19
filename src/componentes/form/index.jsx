@@ -62,6 +62,8 @@ export function Form({ aoColaboradorCadastrado, categoria, cadastrarTime }) {
         onSubmit={(evento) => {
           evento.preventDefault();
           cadastrarTime({ nome: nomeTime, cor: corTime });
+          setNomeTime("");
+          setCorTime("");
         }}
         className="container-form"
       >
