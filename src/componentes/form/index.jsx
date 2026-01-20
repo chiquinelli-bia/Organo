@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Botao } from "./botao";
-import { CampoText } from "./campoText";
+import { Campo } from "./campo";
 import { Dropdown } from "./dropdown";
 import "./form.css";
 
@@ -29,21 +29,21 @@ export function Form({ aoColaboradorCadastrado, categoria, cadastrarTime }) {
     <section className="formulario">
       <form className="container-form" onSubmit={aoSalvar}>
         <h2>Preencha os dados para criar o card do colaborador:</h2>
-        <CampoText
+        <Campo
           required={true}
           label="Nome"
           placeholder="Digite seu nome."
           valor={nome}
           aoAlterado={(valor) => setNome(valor)}
         />
-        <CampoText
+        <Campo
           required={true}
           label="Cargo"
           placeholder="Digite seu Cargo."
           valor={cargo}
           aoAlterado={(valor) => setCargo(valor)}
         />
-        <CampoText
+        <Campo
           label="Imagem"
           placeholder="Digite o endereço da sua imagem."
           valor={imagem}
@@ -68,15 +68,16 @@ export function Form({ aoColaboradorCadastrado, categoria, cadastrarTime }) {
         className="container-form"
       >
         <h2>Preencha os dados para criar um novo time.</h2>
-        <CampoText
+        <Campo
           obrigatorio
           label="Nome"
           placeholder="Digite o nome do time"
           valor={nomeTime}
           aoAlterado={(valor) => setNomeTime(valor)}
         />
-        <CampoText
+        <Campo
           obrigatorio
+          type="color"
           label="Cor"
           placeholder="Digite a cor do time"
           valor={corTime}
