@@ -39,8 +39,8 @@ _🔄 O projeto utiliza diferentes abordagens de passagem de props de forma inte
 Essas variações permitem avaliar impactos em legibilidade, manutenção e organização do código. Refatorações estão planejadas para padronização, mantendo o histórico como evidência da evolução técnica._
 
 <p align="center">
-  <img src="./src/imagens/Organo-pt1.png" alt="Tela inicial do projeto Organo exibindo o banner principal e o formulário para cadastro de colaboradores, com campos para nome, cargo e imagem." width="500" />
-  <img src="./src/imagens/Organo-pt2.png" alt="Seção do projeto Organo mostrando os times organizados por área, com cards de colaboradores no time Front-End, exibindo foto, nome e cargo." width="500" />
+  <img src="./src/imagens/Organo-pt1.png" alt="Tela inicial do projeto Organo exibindo o banner principal e dois formulários: um para cadastro de colaboradores e outro para criação de novos times, incluindo campos de nome, cargo e seleção de cor." width="500" />
+  <img src="./src/imagens/Organo-pt2.png" alt="Seção do projeto Organo exibindo os times organizados por área, com cards de colaboradores contendo foto, nome, cargo e ações interativas como favoritar, remover e alterar dinamicamente a cor do time." width="500" />
 </p>
 
 ## Tecnologias Utilizadas
