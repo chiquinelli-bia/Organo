@@ -50,7 +50,8 @@ Essas variações permitem avaliar impactos em legibilidade, manutenção e orga
 - JavaScript (ES6+)
 - React
 - npm (gerenciamento de dependências)
-  ⚙️ Técnicas:
+
+⚙️ Técnicas:
 
 - Componentização com `componentes funcionais`
 - Gerenciamento de estado com `useState`
