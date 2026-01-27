@@ -24,8 +24,8 @@ Na aplicação, o usuário pode cadastrar colaboradores por meio de um formulár
 - **Renderização dinâmica e controle condicional:** A renderização da aplicação é feita de forma dinâmica utilizando o método map() para exibir os times e seus colaboradores, combinada com renderização condicional para evitar a exibição de times vazios. Nesse processo, a prop key foi aplicada corretamente nas listas, garantindo melhor desempenho e prevenindo avisos do React.
 
 <p align="center">
-  <img src="./src/imagens/Organo-pt1.png" alt="Tela inicial do projeto Organo exibindo o banner principal e o formulário para cadastro de colaboradores, com campos para nome, cargo e imagem." width="500" />
-  <img src="./src/imagens/Organo-pt2.png" alt="Seção do projeto Organo mostrando os times organizados por área, com cards de colaboradores no time Front-End, exibindo foto, nome e cargo." width="500" />
+  <img src="./src/imagens/Organo-pt1.png" alt="Tela inicial do projeto Organo exibindo o banner principal e o formulário para cadastro de colaboradores, com campos para nome, cargo e imagem." width="450" />
+  <img src="./src/imagens/Organo-pt2.png" alt="Seção do projeto Organo mostrando os times organizados por área, com cards de colaboradores no time Front-End, exibindo foto, nome e cargo." width="450" />
 </p>
 
 ## Tecnologias Utilizadas
