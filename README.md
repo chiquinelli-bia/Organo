@@ -40,7 +40,7 @@ Essas variações permitem avaliar impactos em legibilidade, manutenção e orga
 
 <p align="center">
   <img src="./src/imagens/Organo-pt1.png" alt="Tela inicial do projeto Organo exibindo o banner principal e dois formulários: um para cadastro de colaboradores e outro para criação de novos times, incluindo campos de nome, cargo e seleção de cor." width="450" />
-  <img src="./src/imagens/Organo-pt1.png" alt="Tela inicial do projeto Organo exibindo o banner principal e o formulário para cadastro de colaboradores, com campos para nome, cargo e imagem." width="450" />
+  <img src="./src/imagens/Organo-pt2.png" alt="Tela inicial do projeto Organo exibindo o banner principal e o formulário para cadastro de colaboradores, com campos para nome, cargo e imagem." width="450" />
 </p>
 
 ## Tecnologias Utilizadas
