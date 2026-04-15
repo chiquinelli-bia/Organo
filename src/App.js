@@ -1,9 +1,10 @@
 import { useState } from "react";
-import Banner from "./componentes/banner/banner.jsx";
+import Banner from "./componentes/banner/banner.tsx";
 import { Form } from "./componentes/form/index.jsx";
 import Time from "./componentes/time/index.jsx";
 import Footer from "./componentes/footer/index.jsx";
 import { v4 as uuidv4 } from "uuid";
+import { banner } from "./imagens/img.js";
 
 function App() {
   const [times, setTimes] = useState([
@@ -285,9 +286,13 @@ function App() {
       }),
     );
   }
+
   return (
     <div className="App">
-      <Banner />
+      <Banner
+        enderecoImagem={banner}
+        textoAlternativo="O banner principal da página do Organo"
+      />
       <Form
         categoria={times.map((time) => time.nome)}
         aoColaboradorCadastrado={(colaborador) =>

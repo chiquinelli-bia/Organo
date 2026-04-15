@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Botao } from "./botao";
+import Botao from "./botao";
 import { Campo } from "./campo";
 import { Dropdown } from "./dropdown";
 import "./form.css";
