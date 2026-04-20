@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Botao from "./botao";
 import { Campo } from "./campo/index.tsx";
-import { Dropdown } from "./dropdown";
+import { Dropdown } from "./dropdown/index.tsx";
 import "./form.css";
 
 export function Form({ aoColaboradorCadastrado, categoria, cadastrarTime }) {
