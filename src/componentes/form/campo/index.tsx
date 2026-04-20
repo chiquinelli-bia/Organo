@@ -1,7 +1,7 @@
 import "./campo.css";
 
 interface CampoProps {
-  type: "text" | "password" | "email" | "number";
+  type: "text" | "password" | "email" | "number" | "color";
   label: string;
   placeholder: string;
   required?: boolean;
@@ -12,7 +12,7 @@ export function Campo({
   type,
   label,
   placeholder,
-  required,
+  required = false,
   valor,
   aoAlterado,
 }: CampoProps) {
