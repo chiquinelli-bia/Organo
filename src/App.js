@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Banner from "./componentes/banner/banner.tsx";
-import { Form } from "./componentes/form/index.jsx";
+import { Form } from "./componentes/form/index.tsx";
 import Time from "./componentes/time/index.tsx";
 import Footer from "./componentes/footer/index.jsx";
 import { v4 as uuidv4 } from "uuid";
@@ -275,8 +275,12 @@ function App() {
       }),
     );
   }
-  function cadastrarTime(novoTime) {
-    setTimes([...times, { ...novoTime, id: uuidv4() }]);
+  function cadastrarTime(nome, cor) {
+    setTimes([
+      ...times,
+      { id: uuidv4(), nome, cor, corSecundaria: cor + "33" },
+    ]);
+    console.log(cor);
   }
   function aoFavoritar(id) {
     setColaboradores(
