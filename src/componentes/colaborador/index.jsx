@@ -16,7 +16,7 @@ export const Colaborador = (props) => {
         className="deletar"
         onClick={() => props.aoDeletar(props.id)}
       />
-      <div className="cabecalho" style={{ backgroundColor: props.corDeFundo }}>
+      <div className="cabecalho" style={{ backgroundColor: props.cor }}>
         <img src={props.imagem} alt={props.nome} />
       </div>
       <div className="rodape">

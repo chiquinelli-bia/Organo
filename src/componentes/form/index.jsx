@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Botao from "./botao";
-import { Campo } from "./campo/index;tsx";
+import { Campo } from "./campo/index.tsx";
 import { Dropdown } from "./dropdown";
 import "./form.css";
 

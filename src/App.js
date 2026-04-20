@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Banner from "./componentes/banner/banner.tsx";
 import { Form } from "./componentes/form/index.jsx";
-import Time from "./componentes/time/index.jsx";
+import Time from "./componentes/time/index.tsx";
 import Footer from "./componentes/footer/index.jsx";
 import { v4 as uuidv4 } from "uuid";
 import { banner } from "./imagens/img.js";
@@ -260,16 +260,16 @@ function App() {
     setColaboradores([...colaboradores, colaborador]);
   };
   function deletarColaborador(id) {
-    console.log("id recebido:", id);
     setColaboradores(
       colaboradores.filter((colaborador) => colaborador.id !== id),
     );
   }
   function mudarCorDoTime(cor, id) {
+    if (!cor) return;
     setTimes(
       times.map((time) => {
         if (time.id === id) {
-          time.cor = cor;
+          return { ...time, cor };
         }
         return time;
       }),
