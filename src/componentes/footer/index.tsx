@@ -1,6 +1,8 @@
 import "./footer.css";
-import { fb, tw, inst, logo } from "../../imagens/img.js";
-
+import fb from "../../imagens/fb.png";
+import tw from "../../imagens/tw.png";
+import inst from "../../imagens/inst.png";
+import logo from "../../imagens/logo.png";
 export default function Footer() {
   return (
     <footer className="rodape">
