@@ -5,7 +5,7 @@ import "./time.css";
 import hexToRgba from "hex-to-rgba";
 
 interface TimeProps {
-  corSecundaria: string;
+  corSecundaria?: string;
   cor: string;
   nome: string;
   id: string;
