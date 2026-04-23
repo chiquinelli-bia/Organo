@@ -1,12 +1,12 @@
 import { useState } from "react";
-import Banner from "./componentes/banner/banner.js";
-import { Form } from "./componentes/form/index.js";
-import Time from "./componentes/time/index.js";
-import Footer from "./componentes/footer/index.js";
+import Banner from "./componentes/banner/banner";
+import { Form } from "./componentes/form/index";
+import Time from "./componentes/time/index";
+import Footer from "./componentes/footer/index";
 import { v4 as uuidv4 } from "uuid";
 import banner from "./imagens/banner.png";
-import { IColaborador } from "./compartilhados/interface/colaborador.js";
-import { ITime } from "./compartilhados/interface/time.js";
+import { IColaborador } from "./compartilhados/interface/colaborador";
+import { ITime } from "./compartilhados/interface/time";
 
 function App() {
   const [times, setTimes] = useState<ITime[]>([
