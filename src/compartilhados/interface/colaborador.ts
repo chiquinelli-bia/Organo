@@ -2,8 +2,8 @@ export interface IColaborador {
   nome: string;
   cargo: string;
   imagem: string;
-  id?: string;
+  id: string;
   time?: string;
-  favorito?: boolean;
+  favorito: boolean;
   data: string;
 }

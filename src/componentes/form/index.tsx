@@ -25,11 +25,13 @@ export function Form({
   const aoSalvar = (evento: React.SubmitEvent<HTMLFormElement>) => {
     evento.preventDefault();
     aoColaboradorCadastrado({
+      id: crypto.randomUUID(),
       nome,
       cargo,
       imagem,
       time,
       data,
+      favorito: false,
     });
 
     setNome("");

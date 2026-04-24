@@ -42,17 +42,16 @@ const Time = ({
           {colaboradores.map((colaborador) => {
             return (
               <Colaborador
-                colaborador={colaborador}
-                corDeFundo={corSecundaria}
                 cor={cor}
                 id={colaborador.id}
-                key={colaborador.nome}
+                key={colaborador.id}
                 nome={colaborador.nome}
                 cargo={colaborador.cargo}
                 data={colaborador.data}
                 imagem={colaborador.imagem}
                 aoDeletar={aoDeletar}
-                favoritar={favoritar}
+                aoFavoritar={favoritar}
+                favorito={colaborador.favorito}
               />
             );
           })}
