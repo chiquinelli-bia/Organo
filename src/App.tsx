@@ -55,6 +55,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       time: times[0]!.nome,
+      data: "2024-03-12",
     },
     {
       id: uuidv4(),
@@ -62,8 +63,9 @@ function App() {
       nome: "GUILHERME LIMA",
       cargo: "Desenvolvedor Python e JavaScript na Alura",
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        "https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       time: times[0]!.nome,
+      data: "2023-11-05",
     },
     {
       id: uuidv4(),
@@ -73,6 +75,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       time: times[0]!.nome,
+      data: "2022-08-21",
     },
     {
       id: uuidv4(),
@@ -82,6 +85,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       time: times[1]!.nome,
+      data: "2024-01-30",
     },
     {
       id: uuidv4(),
@@ -91,6 +95,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       time: times[1]!.nome,
+      data: "2023-06-14",
     },
     {
       id: uuidv4(),
@@ -98,8 +103,9 @@ function App() {
       nome: "GUILHERME LIMA",
       cargo: "Desenvolvedor Python e JavaScript na Alura",
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        "https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       time: times[1]!.nome,
+      data: "2022-12-02",
     },
     {
       id: uuidv4(),
@@ -109,6 +115,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       time: times[1]!.nome,
+      data: "2021-09-18",
     },
     {
       id: uuidv4(),
@@ -118,6 +125,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       time: times[2]!.nome,
+      data: "2023-04-09",
     },
     {
       id: uuidv4(),
@@ -127,6 +135,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       time: times[2]!.nome,
+      data: "2022-07-25",
     },
     {
       id: uuidv4(),
@@ -134,8 +143,9 @@ function App() {
       nome: "GUILHERME LIMA",
       cargo: "Desenvolvedor Python e JavaScript na Alura",
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        "https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       time: times[2]!.nome,
+      data: "2024-02-11",
     },
     {
       id: uuidv4(),
@@ -145,6 +155,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       time: times[2]!.nome,
+      data: "2021-11-03",
     },
     {
       id: uuidv4(),
@@ -154,6 +165,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       time: times[3]!.nome,
+      data: "2023-09-27",
     },
     {
       id: uuidv4(),
@@ -163,6 +175,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       time: times[3]!.nome,
+      data: "2022-05-16",
     },
     {
       id: uuidv4(),
@@ -170,8 +183,9 @@ function App() {
       nome: "GUILHERME LIMA",
       cargo: "Desenvolvedor Python e JavaScript na Alura",
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        "https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       time: times[3]!.nome,
+      data: "2024-04-01",
     },
     {
       id: uuidv4(),
@@ -181,6 +195,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       time: times[3]!.nome,
+      data: "2021-03-22",
     },
     {
       id: uuidv4(),
@@ -190,6 +205,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       time: times[4]!.nome,
+      data: "2023-12-10",
     },
     {
       id: uuidv4(),
@@ -199,6 +215,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       time: times[4]!.nome,
+      data: "2022-10-08",
     },
     {
       id: uuidv4(),
@@ -206,8 +223,9 @@ function App() {
       nome: "GUILHERME LIMA",
       cargo: "Desenvolvedor Python e JavaScript na Alura",
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        "https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       time: times[4]!.nome,
+      data: "2024-01-19",
     },
     {
       id: uuidv4(),
@@ -217,6 +235,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       time: times[4]!.nome,
+      data: "2021-06-30",
     },
     {
       id: uuidv4(),
@@ -226,6 +245,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/juliana-amoasei.1647533644.jpeg",
       time: times[5]!.nome,
+      data: "2023-08-04",
     },
     {
       id: uuidv4(),
@@ -235,6 +255,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/daniel-artine.1647533644.jpeg",
       time: times[5]!.nome,
+      data: "2022-02-17",
     },
     {
       id: uuidv4(),
@@ -242,8 +263,9 @@ function App() {
       nome: "GUILHERME LIMA",
       cargo: "Desenvolvedor Python e JavaScript na Alura",
       imagem:
-        "	https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
+        "https://www.alura.com.br/assets/img/lideres/guilherme-lima.1647533644.jpeg",
       time: times[5]!.nome,
+      data: "2024-03-05",
     },
     {
       id: uuidv4(),
@@ -253,6 +275,7 @@ function App() {
       imagem:
         "https://www.alura.com.br/assets/img/lideres/paulo-silveira.1647533644.jpeg",
       time: times[5]!.nome,
+      data: "2021-12-12",
     },
   ];
   const [colaboradores, setColaboradores] = useState<IColaborador[]>(inicial);

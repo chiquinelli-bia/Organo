@@ -5,4 +5,5 @@ export interface IColaborador {
   id?: string;
   time?: string;
   favorito?: boolean;
+  data: string;
 }

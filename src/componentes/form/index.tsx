@@ -19,6 +19,7 @@ export function Form({
   const [cargo, setCargo] = useState("");
   const [imagem, setImagem] = useState("");
   const [time, setTime] = useState("");
+  const [data, setData] = useState("");
   const [nomeTime, setNomeTime] = useState("");
   const [corTime, setCorTime] = useState("#ffffff");
   const aoSalvar = (evento: React.SubmitEvent<HTMLFormElement>) => {
@@ -28,12 +29,14 @@ export function Form({
       cargo,
       imagem,
       time,
+      data,
     });
 
     setNome("");
     setCargo("");
     setImagem("");
     setTime("");
+    setData("");
   };
   return (
     <section className="formulario">
@@ -61,6 +64,13 @@ export function Form({
           placeholder="Digite o endereço da sua imagem."
           valor={imagem}
           aoAlterado={(valor) => setImagem(valor)}
+        />
+        <Campo
+          type="date"
+          label="Data"
+          placeholder="Digite a data."
+          valor={data}
+          aoAlterado={(valor) => setData(valor)}
         />
         <Dropdown
           required={true}

@@ -22,6 +22,7 @@ export const Colaborador = (props) => {
       <div className="rodape">
         <h4>{props.nome}</h4>
         <h5>{props.cargo}</h5>
+        <h5>{new Date(props.data).toLocaleDateString()}</h5>
         <div className="favoritar">
           {props.colaborador.favorito ? (
             <AiFillHeart {...propsfavorito} color="red" />
