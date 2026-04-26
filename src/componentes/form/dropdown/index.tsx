@@ -1,13 +1,26 @@
 import "./dropdown.css";
+interface ListaProps {
+  label: string;
+  required: boolean;
+  value: string;
+  aoAlterado: (valor: string) => void;
+  itens: string[];
+}
 
-export function Dropdown({ label, itens, required, valor, aoAlterado }) {
+export function Dropdown({
+  label,
+  required,
+  value,
+  aoAlterado,
+  itens,
+}: ListaProps) {
   return (
     <div className="lista-suspensa">
       <label>{label}</label>
       <select
         onChange={(evento) => aoAlterado(evento.target.value)}
         required={required}
-        value={valor}
+        value={value}
       >
         <option value="">Selecione um time</option>
 

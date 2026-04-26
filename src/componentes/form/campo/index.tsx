@@ -1,13 +1,21 @@
 import "./campo.css";
 
+interface CampoProps {
+  type: "text" | "password" | "email" | "number" | "color" | "date";
+  label: string;
+  placeholder: string;
+  required?: boolean;
+  valor: string;
+  aoAlterado: (valor: string) => void;
+}
 export function Campo({
   type = "text",
   label,
   placeholder,
-  required,
+  required = false,
   valor,
   aoAlterado,
-}) {
+}: CampoProps) {
   return (
     <div className={`campo campo-${type}`}>
       <label>{label}</label>
