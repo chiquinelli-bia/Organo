@@ -13,30 +13,24 @@ Este repositório apresenta **minhas contribuições técnicas e aprendizados**,
 
 ## Minhas Contribuições
 
-- **Inicialização e organização do projeto:**  
-  Estruturação do projeto com Create React App (CRA), seguida da limpeza do boilerplate padrão para garantir uma base de código mais enxuta e organizada.
-  Utilização do `React.StrictMode` em ambiente de desenvolvimento para antecipar alertas, identificar padrões problemáticos e reforçar boas práticas desde o início do projeto.
-- **Componetização da interface:**
-  Criação de componentes funcionais reutilizáveis, seguindo princípios de separação de responsabilidades e composição do React, facilitando a manutenção, leitura e evolução da interface ao longo do projeto.
-- **Gerenciamento de estado com React Hooks:**
-  Implementação da comunicação entre componentes por meio de `props`, incluindo passagem de dados e funções para interação entre componentes pai e filho.
-  Foram exploradas diferentes abordagens de passagem de props para compreender impactos em clareza, organização e manutenção do código, sempre mantendo uma hierarquia previsível e evitando prop drilling
-- **Fluxo de dados com React Hooks:**  
-  Centralização do estado principal no componente `App` utilizando `useState`, garantindo controle previsível dos dados, fácil rastreabilidade das alterações e sincronização imediata entre estado e interface.
-- **Renderização dinâmica e controle condicional:** Renderização automática de times e colaboradores a partir do estado da aplicação, utilizando listas dinâmicas e renderização condicional para evitar exibições desnecessárias, garantindo melhor desempenho e organização visual.
-  lhor desempenho e prevenindo avisos do React.
-- **Uso de bibliotecas externas e boas práticas:** Integração de bibliotecas auxiliares para ganho de produtividade e melhor experiência do usuário, mantendo o código desacoplado e alinhado às boas práticas do ecossistema React.
-  - `UUID` para geração de identificadores únicos.
-  - `React Icons` para implementação de ícones interativos.
-  - `hex-to-rgba` para manipulação de cores com transparência.
-- **Camada de formulários e operações CRUD:**
-  -Implementação de formulários controlados seguindo o fluxo de dados unidirecional do React (one-way data binding), garantindo previsibilidade e reduzindo erros de sincronização conforme a aplicação evolui.
-  -Criação e renderização dinâmica de times e colaboradores conforme as interações do usuário, utilizando `map()` e renderização condicional. melhorando a experiência e a escalabilidade.
-  -Atualização de propriedades dos times, como a alteração dinâmica da cor de fundo, com propagação de eventos via `props` e sincronização imediata entre estado global e interface, seguindo o modelo declarativo do React. mantendo o código limpo, declarativo e sem manipulação direta do DOM.
-  -Implementação da funcionalidade de Remoção de colaboradores por meio de ações disparadas no componente filho, E de favoritar colaboradores, alternando o estado individual de cada item e refletindo visualmente a interação com ícones dinâmicos. garantindo resposta imediata às ações do usuário edemonstrando controle preciso de estado por item e foco em experiência do usuário.
+- Estruturei a aplicação com foco em organização e escalabilidade, removendo boilerplate e aplicando boas práticas desde o início (React Strict Mode).
+- Desenvolvi uma arquitetura baseada em componentes reutilizáveis, priorizando separação de responsabilidades e manutenção.
+- Implementei gerenciamento de estado com `useState`, centralizando dados no componente principal para garantir previsibilidade.
+- Construí um fluxo completo de CRUD (criação, exibição, atualização e remoção de colaboradores e times).
+- Apliquei renderização dinâmica e condicional para refletir o estado em tempo real na interface.
+- Integrei bibliotecas externas para otimizar a experiência e produtividade (`UUID`, `React Icons`, `hex-to-rgba`).
 
-_🔄 O projeto utiliza diferentes abordagens de passagem de props de forma intencional, como parte de um processo de aprendizado e validação de padrões do React.  
-Essas variações permitem avaliar impactos em legibilidade, manutenção e organização do código. Refatorações estão planejadas para padronização, mantendo o histórico como evidência da evolução técnica._
+### Evolução com TypeScript
+
+- Migrei a aplicação de JavaScript para TypeScript, aumentando a previsibilidade e a segurança do código.
+- Defini interfaces para tipagem de props, garantindo contratos claros entre componentes.
+- Refatorei o gerenciamento de estado no componente `App`, adicionando tipagem ao estado global.
+- Padronizei a tipagem em toda a aplicação (`Banner`, `Form`, `Campo`, `Dropdown`, `Time`, `Colaborador`, `Footer`), promovendo consistência e legibilidade.
+- Ajustei dependências e estrutura do projeto para suportar o ambiente TypeScript.
+- Evoluí a camada de formulários com novos campos (como data), mantendo consistência na tipagem e no fluxo de dados.
+- Inclusão de novos campos (como data) e adequação da tipagem para suportar novos formatos de dados, mantendo consistência no fluxo da aplicação.
+
+_🔄 O projeto explora diferentes abordagens de composição e passagem de props de forma intencional, permitindo análise de trade-offs entre legibilidade, manutenção e escalabilidade. Refatorações futuras visam padronização dessas estratégias._
 
 <p align="center">
   <img src="./src/imagens/Organo-pt1.png" alt="Tela inicial do projeto Organo exibindo o banner principal e dois formulários: um para cadastro de colaboradores e outro para criação de novos times, incluindo campos de nome, cargo e seleção de cor." width="450" />
@@ -48,6 +42,7 @@ Essas variações permitem avaliar impactos em legibilidade, manutenção e orga
 - HTML5
 - CSS 3
 - JavaScript (ES6+)
+- TypeScript
 - React
 - npm (gerenciamento de dependências)
 
@@ -63,6 +58,14 @@ Essas variações permitem avaliar impactos em legibilidade, manutenção e orga
 - Integração de bibliotecas externas via npm (`UUID`, `React Icons`, `hex-to-rgba`)
 - Fluxo de dados unidirecional (one-way data binding)
 - Comunicação entre componentes via props (incluindo passagem de funções)
+
+### 🚀 Evolução do Projeto
+
+Este projeto passou por uma evolução incremental, partindo de uma base em JavaScript para uma arquitetura tipada com TypeScript.
+
+A migração foi realizada de forma progressiva, permitindo identificar na prática os ganhos em segurança, legibilidade e manutenção do código, além de evidenciar trade-offs entre flexibilidade e robustez.
+
+Essa abordagem reflete um cenário comum no mercado, onde aplicações existentes são gradualmente adaptadas para TypeScript.
 
 ## Como Ter Acesso ao Projeto
 
@@ -101,5 +104,14 @@ Essas variações permitem avaliar impactos em legibilidade, manutenção e orga
 
 ## Créditos
 
-- Projeto original: ![Acesse aqui.](https://cursos.alura.com.br/course/react-desenvolvendo-javascript)
-- Instrutor(es) e curso: Paulo Silveira e Vinicios Neves ![React: desenvolvendo com javascript](https://cursos.alura.com.br/course/react-desenvolvendo-javascript), Luiz Fernando Ribeiro ![React: como os componentes funcionam](https://cursos.alura.com.br/course/react-componentes-funcionam) - Este repositório destaca **apenas minhas contribuições** ao projeto
+Projeto base inspirado na formação de React com JavaScript da Alura.
+
+Este repositório representa minha implementação prática, com adaptações, decisões técnicas próprias e evolução do código ao longo do desenvolvimento.
+
+## 📚 Referências de Estudo
+
+Para quem deseja seguir uma base semelhante de aprendizado, este projeto foi inspirado nos seguintes cursos:
+
+- ![React: desenvolvendo com JavaScript](https://cursos.alura.com.br/course/react-componentes-funcionam) — Alura
+- ![React: como os componentes funcionam](https://cursos.alura.com.br/course/react-componentes-funcionam) — Alura
+- ![React: migrando para TypeScript](https://cursos.alura.com.br/course/react-migrando-typescript) — Alura
